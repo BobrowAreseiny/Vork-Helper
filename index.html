@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тренажёр к собеседованию — 2D Artist & Spine Animator</title>
+  <meta name="description" content="Интерактивный конспект и банк тестов для подготовки к собеседованию на 2D Artist / 2D Spine Animator / Game UI Artist." />
+  <script>
+    try {
+      var savedTheme = JSON.parse(localStorage.getItem('agnia_trainer_v1') || '{}');
+      if (savedTheme.theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    } catch (e) {}
+  </script>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-mark">2D</div>
+        <div class="brand-text">
+          <h1>Тренажёр к собеседованию</h1>
+          <p>2D Artist • Spine 2D Animator • Game UI</p>
+        </div>
+      </div>
+
+      <nav class="mode-tabs" aria-label="Режимы">
+        <button class="mode-tab active" data-mode="study" onclick="setMode('study')">Конспект</button>
+        <button class="mode-tab" data-mode="test" onclick="setMode('test')">Тесты</button>
+        <button class="mode-tab" data-mode="mock" onclick="setMode('mock')">Интервью</button>
+        <button class="mode-tab" data-mode="exam" onclick="setMode('exam')">Экзамен</button>
+        <button class="mode-tab" data-mode="stats" onclick="setMode('stats')">Статистика</button>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Переключить тему">Ночь</button>
+
+      <div class="header-progress" id="headerProgress"></div>
+    </div>
+  </header>
+
+  <div class="layout" id="appLayout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main" id="main"></main>
+  </div>
+
+  <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Наверх">Наверх</button>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="theory-1.js"></script>
+  <script src="theory-2.js"></script>
+  <script src="theory-3.js"></script>
+  <script src="theory-4.js"></script>
+  <script src="theory-5.js"></script>
+  <script src="theory-interview.js"></script>
+  <script src="theory-marketing.js"></script>
+  <script src="theory-blockout.js"></script>
+  <script src="theory-tools.js"></script>
+  <script src="tests-1.js"></script>
+  <script src="tests-2.js"></script>
+  <script src="tests-3.js"></script>
+  <script src="tests-4.js"></script>
+  <script src="tests-5.js"></script>
+  <script src="tests-6.js"></script>
+  <script src="tests-7.js"></script>
+  <script src="tests-8.js"></script>
+  <script src="tests-ui-extra.js"></script>
+  <script src="tests-multi.js"></script>
+  <script src="tests-interview.js"></script>
+  <script src="tests-marketing.js"></script>
+  <script src="tests-blockout.js"></script>
+  <script src="tests-tools.js"></script>
+  <script src="tests-extra-1.js"></script>
+  <script src="tests-extra-2.js"></script>
+  <script src="tests-extra-3.js"></script>
+  <script src="tests-extra-4.js"></script>
+  <script src="tests-extra-5.js"></script>
+  <script src="tests-extra-6.js"></script>
+  <script src="theory-tags.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
